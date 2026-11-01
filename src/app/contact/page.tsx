@@ -4,6 +4,10 @@ import { SiGithub } from "react-icons/si";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { getProfile } from "@/lib/data";
 
+export const metadata = {
+  title: "Contato",
+};
+
 type ContactIconProps = {
   type: string;
   className: string;

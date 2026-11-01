@@ -4,6 +4,10 @@ import { TechnologyFilter } from "@/components/projects/TechnologyFilter";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { getProjects, getTechnologies } from "@/lib/data";
 
+export const metadata = {
+  title: "Projetos",
+};
+
 type ProjectsPageProps = {
   searchParams: Promise<{ tech?: string | string[] }>;
 };

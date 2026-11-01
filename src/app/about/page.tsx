@@ -5,6 +5,10 @@ import { AboutTabs } from "@/components/about/AboutTabs";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { getProfile, getTechnologies } from "@/lib/data";
 
+export const metadata = {
+  title: "Sobre",
+};
+
 function AboutLoading() {
   return <p role="status">Carregando informações...</p>;
 }

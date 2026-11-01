@@ -20,8 +20,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Hugo Pereira Portfolio",
-  description: "My portfolio",
+  title: {
+    template: "%s | Hugo Pereira",
+    default: "Hugo Pereira",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
