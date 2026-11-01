@@ -56,10 +56,11 @@ Site/portfólio pessoal para apresentar perfil, tecnologias e projetos, com foco
 
 ### 4.3 `/about`
 - `about` (texto) e `photos.about`.
+- Abas interativas de Skills, Idiomas, Educação e Experiência Profissional; somente o componente das abas é Client Component, enquanto os dados são lidos no servidor e passados como props serializáveis.
+- Skills exibem apenas os logos monocromáticos das tecnologias com `showInSkills: true`, adaptados às cores do tema; Idiomas usam `levelLabel`.
 - **Formação:** `education.degrees` (Ciência da Computação, Estácio de Sá, em andamento, previsão 2028).
-- **Cursos:** `education.courses` agrupados ou resumidos (são 9 cursos, ~262 h no total), evitando uma lista longa e monótona.
-- **Idiomas:** `languages` com `levelLabel`.
-- **Experiência:** `experience` está vazio hoje; a seção só é renderizada quando houver itens.
+- **Cursos:** `education.courses` em uma lista visual compacta.
+- **Experiência:** `experience` está vazio hoje; a aba exibe um estado vazio informativo até que haja itens.
 - Seção curta "Como este site foi feito": Next.js → arquivos JSON locais, com link para o repositório do site.
 - **Dados:** perfil local em `src/data/profile.json`.
 
