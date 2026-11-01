@@ -25,6 +25,7 @@ Site/portfólio pessoal para apresentar perfil, tecnologias e projetos, com foco
 
 ### Dentro do escopo
 - Quatro páginas: `/`, `/projects`, `/about`, `/contact`
+- Header e footer compartilhados nas páginas; footer com copyright e links de contato vindos de `profile.json`.
 - Leitura dos dados JSON locais no servidor (Server Components)
 - Filtro de projetos por tecnologia com estado na URL
 - Tema claro/escuro

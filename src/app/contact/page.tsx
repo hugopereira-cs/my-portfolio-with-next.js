@@ -1,8 +1,8 @@
 import { ArrowUpRight, ExternalLink, Mail } from "lucide-react";
+import { LuLinkedin } from "react-icons/lu";
+import { SiGithub } from "react-icons/si";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { getProfile } from "@/lib/data";
-import { SiGithub } from "react-icons/si";
-import { LuLinkedin } from "react-icons/lu";
 
 type ContactIconProps = {
   type: string;
@@ -45,7 +45,7 @@ export default function ContactPage() {
                 href={contact.url}
                 target={opensNewTab ? "_blank" : undefined}
                 rel={opensNewTab ? "noreferrer" : undefined}
-                className="group flex h-full min-h-36 flex-col justify-between rounded-xl border border-foreground/10 bg-foreground/[0.03] p-5 transition-colors hover:border-foreground/20 hover:bg-foreground/[0.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/50"
+                className="group flex h-full min-h-36 flex-col justify-between rounded-xl border border-foreground/10 bg-foreground/3 p-5 transition-colors hover:border-foreground/20 hover:bg-foreground/6 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/50"
               >
                 <div className="flex items-start justify-between">
                   <span className="inline-flex rounded-lg border border-foreground/10 bg-background p-2.5 text-foreground/70 transition-colors group-hover:text-foreground">
