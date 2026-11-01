@@ -65,8 +65,8 @@ Site/portfólio pessoal para apresentar perfil, tecnologias e projetos, com foco
 - **Dados:** perfil local em `src/data/profile.json`.
 
 ### 4.4 `/contact`
-- Links diretos a partir de `contacts` (`type`, `name`, `handle`, `url`): LinkedIn, GitHub e e-mail.
-- Link para download do currículo (arquivo estático em `public/`).
+- Cartões responsivos com links diretos a partir de `contacts` (`type`, `name`, `handle`, `url`): LinkedIn, GitHub e e-mail.
+- O link para download do currículo será exibido quando o arquivo estiver disponível em `public/`.
 - Sem formulário na v1.
 - **Dados:** perfil local em `src/data/profile.json` (campo `contacts`).
 

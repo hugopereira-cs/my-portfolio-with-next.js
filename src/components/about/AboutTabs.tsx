@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { BriefcaseBusiness, CalendarDays, Clock3, GraduationCap, Languages } from "lucide-react";
 import type { KeyboardEvent } from "react";
+import { useState } from "react";
+import type { IconType } from "react-icons";
 import {
   SiCss,
   SiExpress,
@@ -19,7 +20,6 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
-import type { IconType } from "react-icons";
 import type { Experience, Language, Profile, Technology } from "@/types";
 
 const tabs = [
@@ -104,7 +104,7 @@ function AboutTabPanel({
             <section
               key={category.id}
               aria-labelledby={`skills-${category.id}`}
-              className="rounded-lg border border-foreground/10 bg-foreground/[0.03] p-4"
+              className="rounded-lg border border-foreground/10 bg-foreground/3 p-4"
             >
               <h3
                 id={`skills-${category.id}`}
