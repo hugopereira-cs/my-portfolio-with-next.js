@@ -292,7 +292,7 @@ export function AboutTabs({ technologies, languages, education, experience }: Ab
             tabIndex={activeTab === tab.id ? 0 : -1}
             onClick={() => setActiveTab(tab.id)}
             onKeyDown={handleTabKeyDown}
-            className={`min-h-12 border-b-2 px-3 py-3 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-foreground/50 ${
+            className={`min-h-12 border-b-2 px-3 py-3 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-foreground/50 cursor-pointer ${
               activeTab === tab.id
                 ? "border-foreground text-foreground"
                 : "border-transparent text-foreground/60 hover:bg-foreground/3 hover:text-foreground"
