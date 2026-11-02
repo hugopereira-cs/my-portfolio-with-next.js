@@ -1,8 +1,10 @@
 import { Suspense } from "react";
 import { ProjectCard } from "@/components/projects/ProjectCard";
+import { ProjectsSkeleton } from "@/components/projects/ProjectsSkeleton";
 import { TechnologyFilter } from "@/components/projects/TechnologyFilter";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { getProjects, getTechnologies } from "@/lib/data";
+import { connection } from "next/server";
 
 export const metadata = {
   title: "Projetos",
@@ -11,10 +13,6 @@ export const metadata = {
 type ProjectsPageProps = {
   searchParams: Promise<{ tech?: string | string[] }>;
 };
-
-function ProjectsLoading() {
-  return <p role="status">Carregando projetos...</p>;
-}
 
 async function ProjectsContent({ searchParams }: ProjectsPageProps) {
   const { tech } = await searchParams;
@@ -52,7 +50,10 @@ async function ProjectsContent({ searchParams }: ProjectsPageProps) {
   );
 }
 
-export default function ProjectsPage({ searchParams }: ProjectsPageProps) {
+export default async function ProjectsPage({ searchParams }: ProjectsPageProps) {
+  await connection();
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+
   return (
     <PageContainer className="py-10 sm:py-14">
       <header className="mb-8">
@@ -61,7 +62,13 @@ export default function ProjectsPage({ searchParams }: ProjectsPageProps) {
           Projetos desenvolvidos e as tecnologias utilizadas em cada um.
         </p>
       </header>
-      <Suspense fallback={<ProjectsLoading />}>
+      <Suspense
+        fallback={
+          <div role="status" aria-busy="true" aria-label="Carregando projetos">
+            <ProjectsSkeleton />
+          </div>
+        }
+      >
         <ProjectsContent searchParams={searchParams} />
       </Suspense>
     </PageContainer>

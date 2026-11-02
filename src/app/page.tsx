@@ -1,13 +1,7 @@
-// =============================================================================
-// Home page (/) — Server Component
-// Ref: spec 00 § 4.1 (Home / Hero)
-// Dados carregados dos arquivos locais em src/data
-// =============================================================================
-
+import { connection } from "next/server";
 import { HeroSection } from "@/components/ui/HeroSection";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { getProfile } from "@/lib/data";
-import { connection } from "next/server";
 
 export default async function Home() {
   await connection();
