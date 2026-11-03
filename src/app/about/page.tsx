@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { AboutTabs } from "@/components/about/AboutTabs";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { getProfile, getTechnologies } from "@/lib/data";
+import { connection } from "next/server";
 
 export const metadata = {
   title: "Sobre",
@@ -45,7 +46,10 @@ async function AboutContent() {
           <p className="mt-4 text-left sm:mt-0">{profile.about}</p>
         </div>
       </div>
-      <section aria-label="Competências, idiomas, educação e experiência" className="mt-10">
+      <section
+        aria-label="Competências, idiomas, educação e experiência"
+        className="mt-10"
+      >
         <AboutTabs
           technologies={technologies}
           languages={profile.languages}
@@ -57,12 +61,19 @@ async function AboutContent() {
   );
 }
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  await connection();
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+
   return (
     <PageContainer className="py-10 sm:py-14">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold tracking-tight mb-2 sm:text-4xl">Sobre</h1>
-        <span className="max-w-2xl text-foreground/70">Conheça um pouco mais sobre mim.</span>
+        <h1 className="text-3xl font-bold tracking-tight mb-2 sm:text-4xl">
+          Sobre
+        </h1>
+        <span className="max-w-2xl text-foreground/70">
+          Conheça um pouco mais sobre mim.
+        </span>
       </header>
       <Suspense fallback={<AboutLoading />}>
         <AboutContent />
