@@ -3,6 +3,7 @@ import { LuLinkedin } from "react-icons/lu";
 import { SiGithub } from "react-icons/si";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { getProfile } from "@/lib/data";
+import { connection } from "next/server";
 
 export const metadata = {
   title: "Contato",
@@ -26,16 +27,21 @@ function ContactIcon({ type, className }: ContactIconProps) {
   }
 }
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  await connection();
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+
   const { contacts } = getProfile();
 
   return (
     <PageContainer className="py-10 sm:py-14">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Contato</h1>
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          Contato
+        </h1>
         <p className="mt-3 max-w-2xl text-foreground/70">
-          Estou aberto a conversar sobre oportunidades, projetos e tecnologia. Escolha o canal que
-          preferir para entrar em contato.
+          Estou aberto a conversar sobre oportunidades, projetos e tecnologia.
+          Escolha o canal que preferir para entrar em contato.
         </p>
       </header>
 
@@ -63,7 +69,9 @@ export default function ContactPage() {
                   )}
                 </div>
                 <span className="mt-5">
-                  <span className="block font-semibold text-foreground">{contact.name}</span>
+                  <span className="block font-semibold text-foreground">
+                    {contact.name}
+                  </span>
                   <span className="mt-1 block break-all text-sm text-foreground/60">
                     {contact.handle}
                   </span>
