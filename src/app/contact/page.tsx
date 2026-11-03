@@ -3,7 +3,6 @@ import { LuLinkedin } from "react-icons/lu";
 import { SiGithub } from "react-icons/si";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { getProfile } from "@/lib/data";
-import { connection } from "next/server";
 
 export const metadata = {
   title: "Contato",
@@ -28,9 +27,6 @@ function ContactIcon({ type, className }: ContactIconProps) {
 }
 
 export default async function ContactPage() {
-  await connection();
-  await new Promise((resolve) => setTimeout(resolve, 5000));
-
   const { contacts } = getProfile();
 
   return (

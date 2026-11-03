@@ -1,7 +1,3 @@
-// =============================================================================
-// Header — navegação principal do portfólio
-// Ref: spec 00 § 4 (Páginas) e § 11 (Estrutura de pastas)
-// =============================================================================
 "use client";
 
 import Link from "next/link";

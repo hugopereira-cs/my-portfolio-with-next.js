@@ -4,7 +4,6 @@ import { ProjectsSkeleton } from "@/components/projects/ProjectsSkeleton";
 import { TechnologyFilter } from "@/components/projects/TechnologyFilter";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { getProjects, getTechnologies } from "@/lib/data";
-import { connection } from "next/server";
 
 export const metadata = {
   title: "Projetos",
@@ -50,10 +49,7 @@ async function ProjectsContent({ searchParams }: ProjectsPageProps) {
   );
 }
 
-export default async function ProjectsPage({ searchParams }: ProjectsPageProps) {
-  await connection();
-  await new Promise((resolve) => setTimeout(resolve, 5000));
-
+export default function ProjectsPage({ searchParams }: ProjectsPageProps) {
   return (
     <PageContainer className="py-10 sm:py-14">
       <header className="mb-8">

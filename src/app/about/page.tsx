@@ -4,7 +4,6 @@ import { Suspense } from "react";
 import { AboutTabs } from "@/components/about/AboutTabs";
 import { PageContainer } from "@/components/ui/PageContainer";
 import { getProfile, getTechnologies } from "@/lib/data";
-import { connection } from "next/server";
 
 export const metadata = {
   title: "Sobre",
@@ -62,9 +61,6 @@ async function AboutContent() {
 }
 
 export default async function AboutPage() {
-  await connection();
-  await new Promise((resolve) => setTimeout(resolve, 5000));
-
   return (
     <PageContainer className="py-10 sm:py-14">
       <header className="mb-8">

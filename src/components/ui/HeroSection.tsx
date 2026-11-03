@@ -1,8 +1,3 @@
-// =============================================================================
-// HeroSection — exibe capa widescreen, avatar, nome, cargo, slogan, localização e disponibilidade
-// Ref: spec 00 § 4.1 (Home / Hero) — Estilo Perfil Dev Moderno
-// =============================================================================
-
 import { MapPin } from "lucide-react";
 import Image from "next/image";
 import type { Profile } from "@/types";

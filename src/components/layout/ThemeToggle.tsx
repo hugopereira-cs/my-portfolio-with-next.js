@@ -1,8 +1,3 @@
-// =============================================================================
-// ThemeToggle — botão para alternância de tema claro/escuro
-// Ref: spec 00 § 7 (Design e UX)
-// Obs: lógica completa de persistência do tema será conectada na etapa seguinte
-// =============================================================================
 "use client";
 
 import { Moon, Sun } from "lucide-react";
