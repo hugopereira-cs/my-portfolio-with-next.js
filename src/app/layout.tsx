@@ -4,6 +4,7 @@ import Script from "next/script";
 import type { ReactNode } from "react";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { siteUrl } from "@/lib/site-url";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -21,9 +22,33 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     template: "%s | Hugo Pereira",
     default: "Hugo Pereira",
+  },
+  description:
+    "Portfólio de Hugo Pereira, desenvolvedor full stack. Conheça meus projetos, habilidades e trajetória.",
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    siteName: "Hugo Pereira",
+    title: "Hugo Pereira | Desenvolvedor Full Stack",
+    description:
+      "Conheça os projetos, habilidades e trajetória de Hugo Pereira, desenvolvedor full stack.",
+    images: [
+      {
+        url: "/images/banner.png",
+        alt: "Hugo Pereira, desenvolvedor full stack",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hugo Pereira | Desenvolvedor Full Stack",
+    description:
+      "Conheça os projetos, habilidades e trajetória de Hugo Pereira, desenvolvedor full stack.",
+    images: ["/images/banner.png"],
   },
 };
 

@@ -25,12 +25,13 @@ Site/portfólio pessoal para apresentar perfil, tecnologias e projetos, com foco
 
 ### Dentro do escopo
 - Quatro páginas: `/`, `/projects`, `/about`, `/contact`
+- Sitemap em `/sitemap.xml`, contendo as quatro rotas públicas e usando a mesma URL base dos metadados sociais.
 - Header e footer compartilhados nas páginas; footer com copyright e links de contato vindos de `profile.json`.
 - Leitura dos dados JSON locais no servidor (Server Components)
 - Filtro de projetos por tecnologia com estado na URL
 - Tema claro/escuro
 - Tratamento de erro, carregamento e 404
-- SEO básico (metadata e Open Graph)
+- SEO básico (metadata por página, Open Graph e Twitter Cards; imagem de compartilhamento baseada no banner do portfolio)
 - CI com lint e typecheck
 
 ### Fora do escopo (fica para evolução)
@@ -159,7 +160,7 @@ type Project = {
 - `alt` descritivo em todas as imagens; usar `next/image` com dimensões definidas.
 - **Meta:** Lighthouse ≥ 90 em Performance, Acessibilidade, Boas Práticas e SEO.
 - `metadata` por página (título, descrição), Open Graph e imagem de preview para compartilhamento no LinkedIn.
-- `sitemap.xml` e `robots.txt`.
+- `sitemap.xml` com as rotas públicas canônicas (sem query strings dos filtros) e `robots.txt`.
 
 ## 9. Qualidade e CI
 
@@ -172,6 +173,8 @@ type Project = {
 ## 10. Variáveis de ambiente
 
 A aplicação não exige variáveis de ambiente para carregar os dados do portfólio; eles são mantidos nos arquivos JSON locais.
+
+- `NEXT_PUBLIC_SITE_URL` é opcional e define a URL pública canônica usada para resolver as imagens Open Graph e Twitter. Na Vercel, o domínio de produção é usado automaticamente quando essa variável não está definida; em desenvolvimento local, o fallback é `http://localhost:3000`.
 
 ## 11. Estrutura de pastas sugerida
 
