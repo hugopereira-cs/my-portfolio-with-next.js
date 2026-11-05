@@ -166,8 +166,8 @@ type Project = {
 
 - **Biome:** lint e format (`npm run lint`, `npm run format`).
 - **Typecheck:** `tsc --noEmit` (`npm run typecheck`).
-- **GitHub Actions:** a cada push/PR, rodar install, lint e typecheck.
-- **Opcional:** Vitest + Testing Library para componentes-chave; Playwright para a jornada "home → projects".
+- **GitHub Actions:** a cada push/PR, rodar install, lint, typecheck e testes unitários.
+- **Testes unitários:** Vitest para os getters e a normalização dos dados locais; testes de componentes com Testing Library e E2E com Playwright podem ser adicionados em etapas seguintes.
 - **README:** com screenshot, link do deploy, stack e instruções para rodar localmente.
 
 ## 10. Variáveis de ambiente

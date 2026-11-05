@@ -29,3 +29,6 @@ jobs:
 
       - name: Typecheck (tsc)
         run: npm run typecheck
+
+      - name: Unit tests (Vitest)
+        run: npm run test
