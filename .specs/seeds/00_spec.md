@@ -38,7 +38,7 @@ Site/portfólio pessoal para apresentar perfil, tecnologias e projetos, com foco
 - Internacionalização (somente português na v1)
 - Formulário de contato (v1 usa links diretos)
 - Página de detalhe de projeto (`/projects/[slug]`)
-- Testes automatizados (opcional)
+- Testes automatizados (unitários, componentes e E2E)
 - Animações elaboradas
 
 ## 4. Páginas
@@ -166,8 +166,9 @@ type Project = {
 
 - **Biome:** lint e format (`npm run lint`, `npm run format`).
 - **Typecheck:** `tsc --noEmit` (`npm run typecheck`).
-- **GitHub Actions:** a cada push/PR, rodar install, lint, typecheck e testes unitários.
-- **Testes unitários:** Vitest para os getters e a normalização dos dados locais; testes de componentes com Testing Library e E2E com Playwright podem ser adicionados em etapas seguintes.
+- **GitHub Actions:** a cada push/PR, rodar install, lint, typecheck, testes unitários/de componentes e E2E.
+- **Testes unitários e de componentes:** Vitest e Testing Library para os getters, normalização dos dados e interações das abas/filtro.
+- **Testes E2E:** Playwright em Chromium para verificar a aplicação real do filtro de projetos, sua limpeza e o estado vazio.
 - **README:** com screenshot, link do deploy, stack e instruções para rodar localmente.
 
 ## 10. Variáveis de ambiente
@@ -228,7 +229,7 @@ src/
 - Formulário de contato via Route Handler (`app/api/contact/route.ts`).
 - Internacionalização PT/EN (adicionar os textos traduzidos aos dados locais).
 - Integração futura com uma API caso seja necessário atualizar conteúdo sem novo deploy ou compartilhar os dados com outros consumidores.
-- Testes com Vitest/Testing Library e E2E com Playwright.
+- Ampliar a cobertura automatizada além dos fluxos atuais com Vitest/Testing Library e Playwright.
 - Validação com Zod no front para detectar inconsistências nos arquivos locais.
 - Migrar dados para uma API/CMS se a edição sem novo deploy ou o compartilhamento com outros consumidores se tornar necessário.
 

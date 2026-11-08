@@ -8,7 +8,7 @@ on:
 
 jobs:
   quality:
-    name: Lint & Typecheck
+    name: Quality checks
     runs-on: ubuntu-latest
 
     steps:
@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
       - name: Lint (Biome)
         run: npm run lint
 
@@ -32,3 +35,6 @@ jobs:
 
       - name: Unit tests (Vitest)
         run: npm run test
+
+      - name: End-to-end tests (Playwright)
+        run: npm run test:e2e

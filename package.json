@@ -11,6 +11,7 @@
     "format": "biome format --write ./src",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:e2e": "playwright test",
     "check": "biome check ./src",
     "check:fix": "biome check --write ./src",
     "typecheck": "tsc --noEmit"
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.6.3",
+    "@playwright/test": "^1.65.0",
     "@tailwindcss/turbopack": "^4",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/react": "^16.3.3",

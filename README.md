@@ -32,7 +32,16 @@ Run Vitest in watch mode while developing:
 npm run test:watch
 ```
 
-The current unit tests cover the local portfolio data getters.
+The Vitest tests cover the local data getters and component interactions.
+
+Run the end-to-end tests in Chromium:
+
+```bash
+npx playwright install chromium
+npm run test:e2e
+```
+
+Playwright builds and starts the production app automatically before checking the project technology filter.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
