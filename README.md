@@ -1,61 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💼 Portfólio de Hugo Pereira
 
-## Getting Started
+Portfólio pessoal criado para apresentar meu perfil, conhecimentos e projetos em desenvolvimento web. O site é escrito em português e utiliza arquivos JSON locais como fonte dos dados.
 
-First, run the development server:
+🔗 **Repositório:** [hugopereira-cs/my-portfolio-with-next.js](https://github.com/hugopereira-cs/my-portfolio-with-next.js)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ O que você encontra no site
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Início (`/`):** apresentação breve, sem botões ou conteúdo adicional de outras páginas.
+- **Projetos (`/projects`):** projetos em cartões, com descrição, tecnologias e links disponíveis. É possível filtrar a lista por tecnologia; a seleção fica na URL, por exemplo, `/projects?tech=react`.
+- **Sobre (`/about`):** apresentação, competências, idiomas, formação, cursos e experiência profissional, organizados em abas.
+- **Contato (`/contact`):** links de contato; não há formulário de envio.
+- **Tema claro e escuro:** alternância manual com preferência salva no navegador e suporte à preferência de tema do sistema.
+- **SEO básico:** metadados por página, Open Graph, cartões do X/Twitter, sitemap e `robots.txt`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O conteúdo vem de arquivos JSON do projeto e é lido no servidor. Não há uma API ou banco de dados para carregar as informações do portfólio.
 
-## Tests
+## 🧰 Tecnologias utilizadas
 
-Run the unit tests once:
+| Tecnologia | Uso neste projeto |
+|---|---|
+| **Next.js 16 (App Router)** | Framework da aplicação. Organiza as páginas e layouts, gera páginas no servidor e fornece recursos como metadados, `sitemap.xml` e `robots.txt`. |
+| **React 19** | Biblioteca usada para construir as interfaces e os componentes interativos, como as abas e o filtro de projetos. |
+| **TypeScript 5** | Adiciona tipagem estática ao JavaScript e descreve os dados do perfil, projetos, idiomas e tecnologias. |
+| **Tailwind CSS 4** | Estiliza a interface com classes utilitárias e tokens de tema definidos no CSS. |
+| **`@tailwindcss/turbopack`** | Integra o processamento de CSS do Tailwind ao Turbopack configurado no Next.js. |
+| **Biome 2** | Executa a verificação de lint do código-fonte. Também está disponível para verificar e formatar o código. |
+| **Vitest 4** | Executa os testes unitários dos getters de dados e os testes dos componentes. |
+| **Testing Library** | Renderiza componentes para testes e consulta a interface como um usuário faria. `user-event` simula ações como cliques, seleção e teclado; `jsdom` fornece um ambiente de navegador simulado. |
+| **Playwright** | Executa testes E2E no Chromium, abrindo a aplicação real e verificando o fluxo do filtro de projetos. |
+| **`lucide-react` e `react-icons`** | Fornecem ícones da interface e logos das tecnologias apresentadas na página Sobre. |
+| **GitHub Actions** | Executa as verificações de qualidade e os testes quando há um push ou pull request para `main`. |
+
+As fontes Geist Sans e Geist Mono são carregadas de arquivos locais usando `next/font/local`.
+
+## 🚀 Executar localmente
+
+O GitHub Actions usa **Node.js 20**; use essa versão para manter o ambiente local alinhado à CI.
+
+1. Clone o repositório e entre na pasta do projeto:
+
+   ```bash
+   git clone https://github.com/hugopereira-cs/my-portfolio-with-next.js.git
+   cd my-portfolio-with-next.js
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm ci
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Acesse [http://localhost:3000](http://localhost:3000).
+
+## 🧪 Testes
+
+### Testes unitários e de componentes — Vitest
+
+Execute todos os testes uma vez:
 
 ```bash
 npm test
 ```
 
-Run Vitest in watch mode while developing:
+Para executar em modo de observação durante o desenvolvimento:
 
 ```bash
 npm run test:watch
 ```
 
-The Vitest tests cover the local data getters and component interactions.
+Os testes unitários verificam os getters dos dados locais: perfil, tecnologias, projetos, ordenação, filtros e a composição do portfólio. Os testes de componentes verificam as abas da página Sobre e as interações do filtro de tecnologia, incluindo estados selecionados, conteúdo exibido e navegação solicitada.
 
-Run the end-to-end tests in Chromium:
+### Testes de ponta a ponta — Playwright
+
+Instale o Chromium do Playwright uma vez:
 
 ```bash
 npx playwright install chromium
+```
+
+Execute os testes E2E:
+
+```bash
 npm run test:e2e
 ```
 
-Playwright builds and starts the production app automatically before checking the project technology filter.
+O Playwright cria um build de produção, inicia a aplicação localmente na porta `3100` e testa o fluxo completo do filtro no Chromium. Os cenários verificam a filtragem por tecnologia, a limpeza do filtro e a mensagem exibida quando não há projetos correspondentes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✅ Verificações e build
 
-## Learn More
+```bash
+npm run lint       # Lint com Biome
+npm run typecheck  # Verificação de tipos com TypeScript
+npm run build      # Build de produção do Next.js
+```
 
-To learn more about Next.js, take a look at the following resources:
+Outros comandos disponíveis:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run check      # Verifica lint e formatação com Biome
+npm run format     # Formata os arquivos em src/
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🗂️ Onde ficam os dados
 
-## Deploy on Vercel
+Os dados do portfólio ficam em `src/data/`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `profile.json`: apresentação, foto, idiomas, formação, cursos, experiência e contatos.
+- `projects.json`: projetos, imagens, funcionalidades, links e slugs das tecnologias utilizadas.
+- `technologies.json`: nome, categoria e configuração de exibição das tecnologias.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Os tipos ficam em `src/types/`, e a leitura e normalização dos arquivos JSON é centralizada em `src/lib/data/`. Por exemplo, essa camada transforma os slugs de tecnologia dos projetos nos respectivos objetos e ordena os projetos pelo campo `order`.
+
+As imagens estáticas ficam em `public/images/`. Os caminhos usados nos dados JSON devem corresponder aos arquivos dessa pasta.
+
+## ⚙️ Variável de ambiente
+
+`NEXT_PUBLIC_SITE_URL` é opcional. Ela define a URL base usada nos metadados sociais e no sitemap. Se não estiver definida, o projeto usa a URL de produção fornecida pela Vercel quando disponível; fora desse ambiente, usa `http://localhost:3000`.
+
+## 📁 Organização principal
+
+```text
+src/
+├── app/          # Páginas, layout, metadados, sitemap e robots.txt
+├── components/   # Componentes de layout, projetos, Sobre e interface
+├── data/         # Dados locais em JSON
+├── lib/          # Acesso aos dados e utilitários
+└── types/        # Tipos TypeScript
+e2e/              # Testes de ponta a ponta com Playwright
+```
