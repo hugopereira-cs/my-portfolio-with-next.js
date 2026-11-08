@@ -2,7 +2,7 @@
 
 Portfólio pessoal criado para apresentar meu perfil, conhecimentos e projetos em desenvolvimento web. O site é escrito em português e utiliza arquivos JSON locais como fonte dos dados.
 
-🔗 **Repositório:** [hugopereira-cs/my-portfolio-with-next.js](https://github.com/hugopereira-cs/my-portfolio-with-next.js)
+🔗 **Link do site:** [https://hugopereiradev.vercel.app/](https://hugopereiradev.vercel.app/)
 
 ## ✨ O que você encontra no site
 
