@@ -2,7 +2,7 @@
 
 Portfólio pessoal criado para apresentar meu perfil, conhecimentos e projetos em desenvolvimento web. O site é escrito em português e utiliza arquivos JSON locais como fonte dos dados.
 
-🔗 **Link do site:** [https://hugopereiradev.vercel.app/](https://hugopereiradev.vercel.app/)
+🔗 **Link do site:** <a href="https://hugopereiradev.vercel.app/" target="blank" rel="noopener">https://hugopereiradev.vercel.app/</a>
 
 ## ✨ O que você encontra no site
 
