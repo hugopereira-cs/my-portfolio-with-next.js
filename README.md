@@ -35,7 +35,7 @@ As fontes Geist Sans e Geist Mono são carregadas de arquivos locais usando `nex
 
 ## 🚀 Executar localmente
 
-O GitHub Actions usa **Node.js 20**; use essa versão para manter o ambiente local alinhado à CI.
+O GitHub Actions usa **Node.js 24.22.1**; use essa versão para manter o ambiente local alinhado à CI e às dependências de teste.
 
 1. Clone o repositório e entre na pasta do projeto:
 
