@@ -1,93 +1,137 @@
 [
-	{
-		"slug": "login-react-typescript",
-		"title": "Login com React e TypeScript",
-		"summary": "Aplicação de login e cadastro de clientes com autenticação via Supabase.",
-		"description": "Aplicação para realizar login e cadastro de clientes, com autenticação com Supabase, rotas protegidas e rotas públicas.",
-		"cover": {
-			"src": "/images/projects/login-react.png",
-			"alt": "Captura de tela do projeto Login com React e TypeScript"
-		},
-		"gallery": [],
-		"technologies": ["react", "typescript", "supabase"],
-		"features": [
-			"Autenticação com Supabase",
-			"Rotas protegidas e rotas públicas",
-			"Gerenciamento de temas"
-		],
-		"links": {
-			"github": "https://github.com/hugopereira-cs/tela-de-login-react-ts",
-			"live": null
-		},
-		"featured": true,
-		"order": 1
-	},
-	{
-		"slug": "calculadora-react",
-		"title": "Calculadora React",
-		"summary": "Calculadora criada com React.js e Tailwind CSS.",
-		"description": "Calculadora criada com React.js e Tailwind CSS, com histórico de operações, entrada via teclado ou mouse e interface responsiva.",
-		"cover": {
-			"src": "/images/projects/calculadora.png",
-			"alt": "Captura de tela do projeto Calculadora React"
-		},
-		"gallery": [],
-		"technologies": ["react", "javascript", "tailwindcss"],
-		"features": [
-			"Histórico de operações",
-			"Entrada via teclado ou mouse",
-			"Interface responsiva"
-		],
-		"links": {
-			"github": "https://github.com/hugopereira-cs/calculadora-react-dio",
-			"live": "https://hugopereira-cs.github.io/calculadora-react-dio/"
-		},
-		"featured": true,
-		"order": 2
-	},
-	{
-		"slug": "paises-da-copa",
-		"title": "Site Países da Copa",
-		"summary": "Site com informações sobre os 48 países da Copa do Mundo 2026.",
-		"description": "Site com informações sobre os 48 países da Copa do Mundo 2026, com internacionalização (i18n), design responsivo e modo escuro e claro.",
-		"cover": {
-			"src": "/images/projects/paises-da-copa.png",
-			"alt": "Captura de tela do projeto Site Países da Copa"
-		},
-		"gallery": [],
-		"technologies": ["react", "javascript", "tailwindcss"],
-		"features": [
-			"Internacionalização (i18n)",
-			"Design responsivo",
-			"Modo escuro e claro"
-		],
-		"links": {
-			"github": "https://github.com/hugopereira-cs/paises-da-copa",
-			"live": "https://hugopereira-cs.github.io/paises-da-copa/"
-		},
-		"featured": true,
-		"order": 3
-	},
-	{
-		"slug": "customer-app",
-		"title": "Customer App",
-		"summary": "Aplicação full stack para gerenciamento de clientes.",
-		"description": "Projeto CRUD completo para gerenciamento de clientes, com front-end com React e back-end com Node.js.",
-		"cover": {
-			"src": "/images/projects/customer-app.png",
-			"alt": "Captura de tela do projeto Site Países da Copa"
-		},
-		"gallery": [],
-		"technologies": ["react", "typescript", "mongodb"],
-		"features": [
-			"CRUD completo",
-			"Front-end + Back-end",
-			"Salva dados no MongoDB"
-		],
-		"links": {
-			"github": "https://github.com/hugopereira-cs/customer-app-ui"
-		},
-		"featured": true,
-		"order": 4
-	}
+  {
+    "slug": "login-react-typescript",
+    "title": "Login com React e TypeScript",
+    "summary": "Aplicação de login e cadastro de clientes com autenticação via Supabase.",
+    "description": "Aplicação para realizar login e cadastro de clientes, com autenticação com Supabase, rotas protegidas e rotas públicas.",
+    "cover": {
+      "src": "/images/projects/login-react.png",
+      "alt": "Captura de tela do projeto Login com React e TypeScript"
+    },
+    "gallery": [],
+    "technologies": ["react", "typescript", "supabase"],
+    "features": [
+      "Autenticação com Supabase",
+      "Rotas protegidas e rotas públicas",
+      "Gerenciamento de temas"
+    ],
+    "links": {
+      "github": "https://github.com/hugopereira-cs/tela-de-login-react-ts",
+      "live": null
+    },
+    "featured": true,
+    "order": 5
+  },
+  {
+    "slug": "calculadora-react",
+    "title": "Calculadora React",
+    "summary": "Calculadora criada com React.js e Tailwind CSS.",
+    "description": "Calculadora criada com React.js e Tailwind CSS, com histórico de operações, entrada via teclado ou mouse e interface responsiva.",
+    "cover": {
+      "src": "/images/projects/calculadora-react.png",
+      "alt": "Captura de tela do projeto Calculadora React"
+    },
+    "gallery": [],
+    "technologies": ["react", "javascript", "tailwindcss"],
+    "features": [
+      "Histórico de operações",
+      "Entrada via teclado ou mouse",
+      "Interface responsiva"
+    ],
+    "links": {
+      "github": "https://github.com/hugopereira-cs/calculadora-react-dio",
+      "live": "https://hugopereira-cs.github.io/calculadora-react-dio/"
+    },
+    "featured": true,
+    "order": 6
+  },
+  {
+    "slug": "paises-da-copa",
+    "title": "Site Países da Copa",
+    "summary": "Site com informações sobre os 48 países da Copa do Mundo 2026.",
+    "description": "Site com informações sobre os 48 países da Copa do Mundo 2026, com internacionalização (i18n), design responsivo e modo escuro e claro.",
+    "cover": {
+      "src": "/images/projects/paises-da-copa.png",
+      "alt": "Captura de tela do projeto Site Países da Copa"
+    },
+    "gallery": [],
+    "technologies": ["react", "javascript", "tailwindcss"],
+    "features": [
+      "Internacionalização (i18n)",
+      "Design responsivo",
+      "Modo escuro e claro"
+    ],
+    "links": {
+      "github": "https://github.com/hugopereira-cs/paises-da-copa",
+      "live": "https://hugopereira-cs.github.io/paises-da-copa/"
+    },
+    "featured": true,
+    "order": 3
+  },
+  {
+    "slug": "customer-app",
+    "title": "Customer App",
+    "summary": "Aplicação full stack para gerenciamento de clientes.",
+    "description": "Projeto CRUD completo para gerenciamento de clientes, com front-end com React e back-end com Node.js.",
+    "cover": {
+      "src": "/images/projects/customer-app.png",
+      "alt": "Captura de tela do projeto Site Países da Copa"
+    },
+    "gallery": [],
+    "technologies": ["react", "typescript", "mongodb"],
+    "features": [
+      "CRUD completo",
+      "Front-end + Back-end",
+      "Salva dados no MongoDB"
+    ],
+    "links": {
+      "github": "https://github.com/hugopereira-cs/customer-app-ui"
+    },
+    "featured": true,
+    "order": 4
+  },
+  {
+    "slug": "meu-portfolio",
+    "title": "Meu Portfolio",
+    "summary": "Aplicação desenvolvida para apresentar meu perfil, conhecimentos e projetos.",
+    "description": "Projeto desenvolvido com Next.js, TypeScript e Tailwind CSS.",
+    "cover": {
+      "src": "/images/projects/portfolio-next-js.png",
+      "alt": "Captura de tela do meu Portfolio"
+    },
+    "gallery": [],
+    "technologies": ["nextjs", "typescript", "tailwindcss"],
+    "features": [
+      "Temas claro e escuro",
+      "Filtro de projetos por tecnologia",
+      "Teste unitários com Vitest e E2E com Playwright"
+    ],
+    "links": {
+      "github": "https://github.com/hugopereira-cs/my-portfolio-with-next.js"
+    },
+    "featured": true,
+    "order": 1
+  },
+  {
+    "slug": "football-api",
+    "title": "Football API",
+    "summary": "API com CRUD completo para gerenciamento de jogadores e consulta de clubes da Champions League.",
+    "description": "Projeto construído com Node.js, TypeScript, Express e PostgreSQL.",
+    "cover": {
+      "src": "/images/projects/football-api.png",
+      "alt": "Imagem ilustrativa do projeto da Football API"
+    },
+    "gallery": [],
+    "technologies": ["nodejs", "typescript", "express"],
+    "features": [
+      "Todas as operações CRUD para gerenciamento de jogadores",
+      "Listagem de clubes",
+      "Configuração de CORS"
+    ],
+    "links": {
+      "github": "https://github.com/hugopereira-cs/football-api"
+    },
+    "featured": true,
+    "order": 2
+  }
 ]

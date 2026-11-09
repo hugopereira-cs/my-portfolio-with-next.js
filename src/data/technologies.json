@@ -1,97 +1,97 @@
 [
-	{
-		"slug": "javascript",
-		"name": "JavaScript",
-		"category": "language",
-		"showInSkills": true
-	},
-	{
-		"slug": "typescript",
-		"name": "TypeScript",
-		"category": "language",
-		"showInSkills": true
-	},
-	{
-		"slug": "python",
-		"name": "Python",
-		"category": "language",
-		"showInSkills": true
-	},
-	{
-		"slug": "html5",
-		"name": "HTML5",
-		"category": "language",
-		"showInSkills": true
-	},
-	{
-		"slug": "css3",
-		"name": "CSS3",
-		"category": "language",
-		"showInSkills": true
-	},
+  {
+    "slug": "javascript",
+    "name": "JavaScript",
+    "category": "language",
+    "showInSkills": true
+  },
+  {
+    "slug": "typescript",
+    "name": "TypeScript",
+    "category": "language",
+    "showInSkills": true
+  },
+  {
+    "slug": "python",
+    "name": "Python",
+    "category": "language",
+    "showInSkills": true
+  },
+  {
+    "slug": "html5",
+    "name": "HTML5",
+    "category": "language",
+    "showInSkills": true
+  },
+  {
+    "slug": "css3",
+    "name": "CSS3",
+    "category": "language",
+    "showInSkills": true
+  },
 
-	{
-		"slug": "nextjs",
-		"name": "Next.js",
-		"category": "frontend",
-		"showInSkills": true
-	},
-	{
-		"slug": "react",
-		"name": "React",
-		"category": "frontend",
-		"showInSkills": true
-	},
-	{
-		"slug": "tailwindcss",
-		"name": "Tailwind CSS",
-		"category": "frontend",
-		"showInSkills": true
-	},
+  {
+    "slug": "nextjs",
+    "name": "Next.js",
+    "category": "frontend",
+    "showInSkills": true
+  },
+  {
+    "slug": "react",
+    "name": "React",
+    "category": "frontend",
+    "showInSkills": true
+  },
+  {
+    "slug": "tailwindcss",
+    "name": "Tailwind CSS",
+    "category": "frontend",
+    "showInSkills": true
+  },
 
-	{
-		"slug": "nodejs",
-		"name": "Node.js",
-		"category": "backend",
-		"showInSkills": true
-	},
-	{
-		"slug": "express",
-		"name": "Express",
-		"category": "backend",
-		"showInSkills": true
-	},
-	{
-		"slug": "supabase",
-		"name": "Supabase",
-		"category": "backend",
-		"showInSkills": false
-	},
+  {
+    "slug": "nodejs",
+    "name": "Node.js",
+    "category": "backend",
+    "showInSkills": true
+  },
+  {
+    "slug": "express",
+    "name": "Express",
+    "category": "backend",
+    "showInSkills": true
+  },
+  {
+    "slug": "supabase",
+    "name": "Supabase",
+    "category": "backend",
+    "showInSkills": false
+  },
 
-	{
-		"slug": "mongodb",
-		"name": "MongoDB",
-		"category": "database",
-		"showInSkills": true
-	},
-	{
-		"slug": "postgresql",
-		"name": "PostgreSQL",
-		"category": "database",
-		"showInSkills": true
-	},
+  {
+    "slug": "mongodb",
+    "name": "MongoDB",
+    "category": "database",
+    "showInSkills": true
+  },
+  {
+    "slug": "postgresql",
+    "name": "PostgreSQL",
+    "category": "database",
+    "showInSkills": true
+  },
 
-	{ "slug": "git", "name": "Git", "category": "tools", "showInSkills": true },
-	{
-		"slug": "github",
-		"name": "GitHub",
-		"category": "tools",
-		"showInSkills": true
-	},
-	{
-		"slug": "cypress",
-		"name": "Cypress",
-		"category": "tools",
-		"showInSkills": false
-	}
+  { "slug": "git", "name": "Git", "category": "tools", "showInSkills": true },
+  {
+    "slug": "github",
+    "name": "GitHub",
+    "category": "tools",
+    "showInSkills": true
+  },
+  {
+    "slug": "cypress",
+    "name": "Cypress",
+    "category": "tools",
+    "showInSkills": false
+  }
 ]
