@@ -24,7 +24,7 @@ test.describe("filtro de projetos", () => {
 
     await expect(page).toHaveURL(/\/projects$/);
     await expect(page.getByLabel("Filtrar por tecnologia")).toHaveValue("");
-    await expect(page.getByRole("article")).toHaveCount(4);
+    await expect(page.getByRole("article")).toHaveCount(6);
     await expect(
       page.getByRole("heading", { name: "Login com React e TypeScript" })
     ).toBeVisible();
