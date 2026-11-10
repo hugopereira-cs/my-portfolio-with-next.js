@@ -5,7 +5,7 @@
     "summary": "Aplicação de login e cadastro de clientes com autenticação via Supabase.",
     "description": "Aplicação para realizar login e cadastro de clientes, com autenticação com Supabase, rotas protegidas e rotas públicas.",
     "cover": {
-      "src": "/images/projects/login-react.png",
+      "src": "/images/projects/login-react-v2.png",
       "alt": "Captura de tela do projeto Login com React e TypeScript"
     },
     "gallery": [],
@@ -51,7 +51,7 @@
     "summary": "Site com informações sobre os 48 países da Copa do Mundo 2026.",
     "description": "Site com informações sobre os 48 países da Copa do Mundo 2026, com internacionalização (i18n), design responsivo e modo escuro e claro.",
     "cover": {
-      "src": "/images/projects/paises-da-copa.png",
+      "src": "/images/projects/paises-da-copa-v2.png",
       "alt": "Captura de tela do projeto Site Países da Copa"
     },
     "gallery": [],
@@ -74,7 +74,7 @@
     "summary": "Aplicação full stack para gerenciamento de clientes.",
     "description": "Projeto CRUD completo para gerenciamento de clientes, com front-end com React e back-end com Node.js.",
     "cover": {
-      "src": "/images/projects/customer-app.png",
+      "src": "/images/projects/customer-app-v2.png",
       "alt": "Captura de tela do projeto Site Países da Copa"
     },
     "gallery": [],

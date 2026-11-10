@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Script from "next/script";
 import type { ReactNode } from "react";
