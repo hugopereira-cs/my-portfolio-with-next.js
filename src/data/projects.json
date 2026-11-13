@@ -5,7 +5,7 @@
     "summary": "Aplicação de login e cadastro de clientes com autenticação via Supabase.",
     "description": "Aplicação para realizar login e cadastro de clientes, com autenticação com Supabase, rotas protegidas e rotas públicas.",
     "cover": {
-      "src": "/images/projects/login-react-v2.png",
+      "src": "/images/projects/login-react-v3.png",
       "alt": "Captura de tela do projeto Login com React e TypeScript"
     },
     "gallery": [],
