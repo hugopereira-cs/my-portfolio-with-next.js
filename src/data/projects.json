@@ -55,7 +55,7 @@
       "alt": "Captura de tela do projeto Site Países da Copa"
     },
     "gallery": [],
-    "technologies": ["react", "javascript", "tailwindcss"],
+    "technologies": ["react", "typescript", "tailwindcss"],
     "features": [
       "Internacionalização (i18n)",
       "Design responsivo",
